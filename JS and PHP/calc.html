@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+            function Square(){
+                var a = document.getElementById('num').value;
+                var b = a * a
+                return document.getElementById("result").innerHTML =    "Square of number: " + b;
+            }
+            function Cube(){
+                var a = document.getElementById('num').value;
+                var b = a * a * a;
+                return document.getElementById("result").innerHTML =    "Cube of number: " + b;
+            }
+            function Reverse(){
+                var a = document.getElementById('num').value;
+                var b = parseFloat(a.toString().split('').reverse().join('')) * Math.sign(a);
+                return document.getElementById("result").innerHTML =   "reverse of number: " + b;
+            }
+            function Factorial(){
+                var a = document.getElementById('num').value;
+                if (a < 0){
+                    var b = 'Error!';
+                }
+                else if(a === 0){
+                    var b = 1;
+                }
+                else {
+                    var b = 1;
+                    for (var i = 1; i <= a; i){
+                        i++;
+                        b *= i;
+                    }
+                }
+                return document.getElementById("result").innerHTML =    "Factorial of Number: " + b;
+            }
+            function squareRoot(){
+                var a = document.getElementById('num').value;
+                var b = a ** (1/2);
+                return document.getElementById("result").innerHTML =    "Square root of number: " + b;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <form>
+            <b><lable>Enter a number: </lable></b>
+            <input type="number" id="num" placeholder="number">
+        </form><br>
+        <button onclick="Square()">Square</button>
+        <button onclick="Cube()">Cube</button>
+        <button onclick="Reverse()">Reverse</button>
+        <button onclick="Factorial()">Factorial</button>
+        <button onclick="squareRoot()">Square root</button>
+        <h3 id="result" align="center"></h3>
+    </body>
+</html>
