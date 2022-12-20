@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<script type="text/javascript">
+function sub()
+{
+if(document.getElementById("usn").value == "")
+alert("Please enter your USN");
+else if(document.getElementById("name").value == "")
+alert("Please enter your name");
+else if(!(document.getElementById("date").value))
+alert("Please enter Date of birth");
+else if(document.getElementById("b").value=="")
+alert("Please Select your Branch");
+else if(document.getElementById("em").value == "")
+alert("Please enter your Email id");
+else if(document.getElementById("phon").value == "")
+alert("Please enter your Phone Number");
+else if(document.getElementById("add").value == "")
+alert("Please enter your Address");
+else if(document.getElementById("city").value == "")
+alert("Please enter your City Name");
+else if(document.getElementById("pin").value == "")
+alert("Please enter Pincode");
+else if(document.getElementById("t1").value == "")
+alert("Please enter your User name");
+else if(document.getElementById("t2").value == "")
+alert("Please enter a password");
+else if(document.getElementById("t3").value == "")
+alert("Please enter Confirm password");
+else
+alert("Form has been submitted");
+}
+</script>
+</head>
+<body>
+
+8 CO2 L3
+
+Page 10 of
+2
+
+<form>
+<fieldset>
+<legend>Student Registration Form</legend>
+<label> USN : </label>
+<input type="text" id="usn"> <br>
+<br><label> Name: </label>
+<input type="text" id="name"> <br>
+<br> <label> Date of birth:</label>
+<input type="date" id="date"> <br>
+<br><label>Branch:</label>
+<select name="branch" id="b">
+<option value=""> Select your baranch</option>
+
+<option >IOT</option>
+<option >MACT</option>
+<option >CTIS</option>
+<option >AI</option>
+<option >SE</option>
+</select> <br>
+<br><label> Email Id:</label>
+<input type="email" id="em"><br>
+<br><label> Phone number:</label>
+<input type="tel" id="phon"> <br>
+<br><label> Address: </label>
+<input type="text" id="add"> <br>
+<br><label> City: </label>
+<input type="text" id="city"> <br>
+<br><label> Pincode: </label>
+<input type="text" id="pin"> <br>
+<br>User Name:<input type="text" id="t1"><br>
+<br>Password:<input type="text" id="t2"><br><br>
+Confirm Password:<input type="text" id="t3"><br><br>
+<input type="submit" value="Submit"onclick="(sub());">
+<input type="reset" value="Reset">
+</fieldset>
+</form>
+</body>
+</html>
